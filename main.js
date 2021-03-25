@@ -96,5 +96,32 @@ function KeyDown(e){
     {
         LEFT();
     }
-
+}
+function UP(){
+    if(YcordPlayer>0){
+        YcordPlayer = YcordPlayer-10;
+        canvas.remove(playerObject);
+        PlayerADD();
+    }
+}
+function DOWN(){
+    if(YcordPlayer<700){
+        YcordPlayer = YcordPlayer+10;
+        canvas.remove(playerObject);
+        PlayerADD();
+    }
+}
+function LEFT(){
+    if(XcordPlayer>0){
+        XcordPlayer = XcordPlayer-10;
+        canvas.remove(playerObject);
+        PlayerADD();
+    }
+}
+function RIGHT(){
+    if(XcordPlayer<1600){
+        XcordPlayer = XcordPlayer+10;
+        canvas.remove(playerObject);
+        PlayerADD();
+    }
 }
